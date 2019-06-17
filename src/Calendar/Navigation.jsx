@@ -26,6 +26,7 @@ export default function Navigation({
   minDate,
   navigationAriaLabel,
   navigationLabel,
+  navigationLabelDisabled,
   next2AriaLabel,
   next2Label,
   nextAriaLabel,
@@ -38,7 +39,7 @@ export default function Navigation({
   view,
   views,
 }) {
-  const drillUpAvailable = views.indexOf(view) > 0;
+  const drillUpAvailable = !navigationLabelDisabled && views.indexOf(view) > 0;
   const shouldShowPrevNext2Buttons = view !== 'century';
 
   const previousActiveStartDate = getBeginPrevious(view, date);
@@ -166,6 +167,7 @@ export default function Navigation({
 Navigation.defaultProps = {
   formatMonthYear: defaultFormatMonthYear,
   navigationAriaLabel: '',
+  navigationLabelDisabled: true,
   next2AriaLabel: '',
   next2Label: '»',
   nextAriaLabel: '',
@@ -189,6 +191,7 @@ Navigation.propTypes = {
   nextLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   navigationAriaLabel: PropTypes.string,
   navigationLabel: PropTypes.func,
+  navigationLabelDisabled: _propTypes.default.bool,
   prev2AriaLabel: PropTypes.string,
   prev2Label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   prevAriaLabel: PropTypes.string,
