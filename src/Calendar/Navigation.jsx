@@ -191,7 +191,7 @@ Navigation.propTypes = {
   nextLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   navigationAriaLabel: PropTypes.string,
   navigationLabel: PropTypes.func,
-  navigationLabelDisabled: PropTypes.default.bool,
+  navigationLabelDisabled: PropTypes.bool,
   prev2AriaLabel: PropTypes.string,
   prev2Label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   prevAriaLabel: PropTypes.string,

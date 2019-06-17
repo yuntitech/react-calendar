@@ -174,7 +174,7 @@ Navigation.propTypes = {
   nextLabel: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.node]),
   navigationAriaLabel: _propTypes.default.string,
   navigationLabel: _propTypes.default.func,
-  navigationLabelDisabled: _propTypes.default.default.bool,
+  navigationLabelDisabled: _propTypes.default.bool,
   prev2AriaLabel: _propTypes.default.string,
   prev2Label: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.node]),
   prevAriaLabel: _propTypes.default.string,
