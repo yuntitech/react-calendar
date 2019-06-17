@@ -7,13 +7,13 @@ exports.default = Navigation;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _propTypes2 = _interopRequireDefault(require("prop-types"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _dates = require("../shared/dates");
 
 var _dateFormatter = require("../shared/dateFormatter");
 
-var _propTypes3 = require("../shared/propTypes");
+var _propTypes2 = require("../shared/propTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -162,24 +162,24 @@ Navigation.defaultProps = {
   prevLabel: '‹'
 };
 Navigation.propTypes = {
-  activeStartDate: _propTypes2.default.instanceOf(Date).isRequired,
-  drillUp: _propTypes2.default.func.isRequired,
-  formatMonthYear: _propTypes2.default.func,
-  locale: _propTypes2.default.string,
-  maxDate: _propTypes2.default.instanceOf(Date),
-  minDate: _propTypes2.default.instanceOf(Date),
-  next2AriaLabel: _propTypes2.default.string,
-  next2Label: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.node]),
-  nextAriaLabel: _propTypes2.default.string,
-  nextLabel: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.node]),
-  navigationAriaLabel: _propTypes2.default.string,
-  navigationLabel: _propTypes2.default.func,
-  navigationLabelDisabled: _propTypes.default.bool,
-  prev2AriaLabel: _propTypes2.default.string,
-  prev2Label: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.node]),
-  prevAriaLabel: _propTypes2.default.string,
-  prevLabel: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.node]),
-  setActiveStartDate: _propTypes2.default.func.isRequired,
-  view: _propTypes3.isView.isRequired,
-  views: _propTypes3.isViews.isRequired
+  activeStartDate: _propTypes.default.instanceOf(Date).isRequired,
+  drillUp: _propTypes.default.func.isRequired,
+  formatMonthYear: _propTypes.default.func,
+  locale: _propTypes.default.string,
+  maxDate: _propTypes.default.instanceOf(Date),
+  minDate: _propTypes.default.instanceOf(Date),
+  next2AriaLabel: _propTypes.default.string,
+  next2Label: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.node]),
+  nextAriaLabel: _propTypes.default.string,
+  nextLabel: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.node]),
+  navigationAriaLabel: _propTypes.default.string,
+  navigationLabel: _propTypes.default.func,
+  navigationLabelDisabled: _propTypes.default.default.bool,
+  prev2AriaLabel: _propTypes.default.string,
+  prev2Label: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.node]),
+  prevAriaLabel: _propTypes.default.string,
+  prevLabel: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.node]),
+  setActiveStartDate: _propTypes.default.func.isRequired,
+  view: _propTypes2.isView.isRequired,
+  views: _propTypes2.isViews.isRequired
 };
